@@ -1,6 +1,10 @@
 # VegSegment_SR
 *Phenotype segmentation method based on spectral reconstruction for UAV field vegetation*
 
+Field phenotyping can show plant growth in real-time, and segmented vegetation data can facilitate the visualization and analysis of vegetation information by reducing the influence of background noise. Field phenotype segmentation is considered a difficult task due to the extremely complex environment. Currently, spectral-based methods with deep learning for field vegetation segmentation are developing to overcome complex environments and poor generalization, but there are still two limitations. 
+One is that the equipment for real-field data collection is extremely expensive. The other is that the datasets in the field are scarce, which is time-consuming and laborious for data annotation. To solve these problems, this study aims to propose a weakly supervised field vegetation segmentation method by introducing multispectral images as a priori information and referring to the theory of vegetation index (VI). In detail, we first adopt the visible light images to reconstruct corresponding multispectral images and then perform feature fusion based on the reconstructed image. Furthermore, a VI-based threshold segmentation is achieved on the reconstructed multispectral images to obtain the field vegetation segmentation map. 
+In addition, we provide an unmanned aerial vehicle (UAV) RGB-multispectral image dataset, including 2358 pairs of RGB-multispectral images. We introduce a variety of spectral reconstruction (SR) methods as the baseline model and train different SR methods on our dataset, which are applied to different crop vegetations and environments, showing satisfactory experimental results.
+
 # Env
 
 ```shell
